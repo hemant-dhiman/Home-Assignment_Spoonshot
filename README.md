@@ -4,6 +4,7 @@ Home assignment of Software Engineering Internship @ Spoonshot
 # requirements Python
 
 - Flask (latest)
+- dnspython
 
 # requirements HTML
 
