@@ -1,0 +1,37 @@
+{% extends "BaseHTML.html" %}
+{% block title %}BOOKS{% endblock %}
+
+{% block bodycontent %}
+<style>
+.aligning{
+	margin-left:600px;
+	margin-top:20px;
+}
+#imagebutton{
+	position:relative;
+	left:-15px;
+	top:-15px;
+	margin-bottom:15px;
+}
+#result{
+	margin-top:50px;
+}
+
+h5{
+    color: white;
+    text-align:center;
+}
+body{
+    background-color: #c0c0c0;
+}
+</style>
+    {% for i in dataset_search %}
+
+        <h5 class="center-align white-text">{{i['title']}}</h5>
+        <h5 class="center-align white-text"> By: {{i["authors"]}}</h5><br>
+        <img class='aligning card z-depth-5' id='dynamic',
+             src='{{i["src"]}}'><br>
+        <a href='{{i["img"]}}'><button id='imagebutton' class="btn red aligning">Read More</button></a><br><br>
+
+    {% endfor %}
+{% endblock %}
