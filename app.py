@@ -36,4 +36,5 @@ def search():
         return redirect(url_for("root"))
 
 
-app.run(debug=True)
+if __name__ == "__main__": 
+        app.run() 
