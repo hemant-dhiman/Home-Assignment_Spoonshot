@@ -5,6 +5,9 @@ Home assignment of Software Engineering Internship @ Spoonshot
 
 - Flask (latest)
 - dnspython
+- requests
+- json
+
 
 # requirements HTML
 
